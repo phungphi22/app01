@@ -69,7 +69,7 @@ namespace app01
     }
     #endregion
 
-
+    //ggggggggggggggggg
 
     #region "abstract 01"
     abstract class A
