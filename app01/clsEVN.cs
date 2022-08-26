@@ -66,10 +66,10 @@ namespace app01
          
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
-            //1.import with 2 empty columns
+            //1. edit on local Dungnt branch
             clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
             objCustomer_xls.MaKH = "PD12000025378";
-            objCustomer_xls.TienDaNop = 120000;
+            objCustomer_xls.TienDaNop = 111111;
             objCustomer_xls.iMonth = 9;
 
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();
@@ -84,10 +84,10 @@ namespace app01
     {
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
-            //1.import with 1 empty columns
+            //1. edit on local Dungnt branch
             clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
-            objCustomer_xls.MaKH = "PD12000025379";
-            objCustomer_xls.TienDaNop = 50000;
+            objCustomer_xls.MaKH = "PD12000025333";
+            objCustomer_xls.TienDaNop = 150000;
             objCustomer_xls.iMonth = 9;
 
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();

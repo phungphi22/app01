@@ -19,20 +19,14 @@ namespace app01
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //IMethods iMe = new MBase();
-            //iMe.F();
-
-            //iMe = new MDerived();
-            //iMe.F();
-            //RealWidget o = new app01.RealWidget();
-            //o.DoCool();
+           
 
             string BankNameSeleted = "ACB";//string BankNameSeleted = "VCB";
             string sPath = "C:\bankTransaction.xls";
             clsEVN oEVN=null;
 
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();
-            if (BankNameSeleted == "VCB")
+            if (BankNameSeleted == "ACB")
             { oEVN = new clsVCB(); }
             else
             { oEVN = new clsACB(); }
