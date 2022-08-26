@@ -60,6 +60,10 @@ namespace app01
     //============ Derived =============
     class clsVCB : clsEVN
     {
+        //mã ngân hàng vcb
+         public string MaKH { get; set; }
+         
+         
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
             //1.import with 2 empty columns
