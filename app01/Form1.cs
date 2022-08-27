@@ -25,13 +25,11 @@ namespace app01
             string sPath = "C:\bankTransaction.xls";
             clsEVN oEVN=null;
 
-            //this block edited by htkvca
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();
             if (BankNameSeleted == "ACB")
             { oEVN = new clsVCB(); }
-            else if(BankNameSeleted == "ACB")
+            else
             { oEVN = new clsACB(); }
-            else {oEVN = new clsACB();}
 
             lst= oEVN.excel_process_by_bank(BankNameSeleted, sPath);
             foreach (clsPaidCustomer objPaidCustomer in lst)
