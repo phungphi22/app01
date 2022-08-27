@@ -60,17 +60,13 @@ namespace app01
     //============ Derived =============
     class clsVCB : clsEVN
     {
-        //Long NT edit: mã ngân hàng vcb
-         public string MaKH { get; set; }
-         
-         
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
-            //1. edit on local Dungnt branch
+            //1.htkvca edit on dungnt
             clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
-            objCustomer_xls.MaKH = "PD12000025378";
-            objCustomer_xls.TienDaNop = 111111;
-            objCustomer_xls.iMonth = 9;
+            objCustomer_xls.MaKH = "PD12000025380";
+            objCustomer_xls.TienDaNop = 220000;
+            objCustomer_xls.iMonth = 5;
 
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();
             lst.Add(objCustomer_xls);
@@ -84,10 +80,10 @@ namespace app01
     {
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
-            //1. edit on local Dungnt branch
+            //1.import with 1 empty columns
             clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
-            objCustomer_xls.MaKH = "PD12000025333";
-            objCustomer_xls.TienDaNop = 150000;
+            objCustomer_xls.MaKH = "PD12000025379";
+            objCustomer_xls.TienDaNop = 50000;
             objCustomer_xls.iMonth = 9;
 
             List<clsPaidCustomer> lst = new List<clsPaidCustomer>();
