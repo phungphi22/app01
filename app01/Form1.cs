@@ -21,7 +21,7 @@ namespace app01
         {
            
 
-            string BankNameSeleted = "ACB";//string BankNameSeleted = "VCB";
+            string BankNameSeleted = "ACB";
             string sPath = "C:\bankTransaction.xls";
             clsEVN oEVN=null;
 
