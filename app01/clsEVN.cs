@@ -32,6 +32,7 @@ namespace app01
             }
         }
 
+    
         //3.Validate (have body)
         public string fcnValidateData(string MaKH, Int32 So_tien, Int32 iMonth, Int32 iYear)
         {
@@ -99,5 +100,36 @@ namespace app01
         public string MaKH { get; set; }
         public Int32 TienDaNop { get; set; }
         public Int32 iMonth { get; set; }
+    }
+
+    public class oTesst
+    {
+        public int fcnUCalculatePlus(int x, int y)
+        {
+            return x + y;
+        }
+
+    }
+
+    public class BankAccount
+    {
+        private int _balance;
+        public  BankAccount(int StartBalance)
+        {
+            _balance = StartBalance;
+
+        }
+
+        public int CurrenceBalance
+        {
+            set { _balance = value; }
+            get { return _balance; }
+        }
+
+        public void Debit(int DebitAmount)
+        {
+            _balance -= DebitAmount;
+
+        }
     }
 }
