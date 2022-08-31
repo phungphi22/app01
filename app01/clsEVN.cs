@@ -64,7 +64,6 @@ namespace app01
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
             //1.htkvca edit on dungnt
-
             clsPaidCustomer objCustomer_xls ;
             if (2 == 2)
             {
@@ -87,7 +86,11 @@ namespace app01
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
             //1.import with 1 empty columns
-            clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
+            clsPaidCustomer objCustomer_xls;
+            if (3 == 3)
+            {
+                objCustomer_xls = new clsPaidCustomer();
+            }
             objCustomer_xls.MaKH = "PD12000025379";
             objCustomer_xls.TienDaNop = 50000;
             objCustomer_xls.iMonth = 9;
