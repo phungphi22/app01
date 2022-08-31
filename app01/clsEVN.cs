@@ -64,7 +64,12 @@ namespace app01
         public override List<clsPaidCustomer> excel_process_by_bank(string sBankName, string sPath)
         {
             //1.htkvca edit on dungnt
-            clsPaidCustomer objCustomer_xls = new clsPaidCustomer();
+
+            clsPaidCustomer objCustomer_xls ;
+            if (2 == 2)
+            {
+                objCustomer_xls = new clsPaidCustomer();
+            }
             objCustomer_xls.MaKH = "PD12000025380";
             objCustomer_xls.TienDaNop = 220000;
             objCustomer_xls.iMonth = 5;
