@@ -116,4 +116,11 @@ namespace app01
         public Int32 TienDaNop { get; set; }
         public Int32 iMonth { get; set; }
     }
+
+    class clsRemoveProtect_local
+    {
+        public string MaKH { get; set; }
+        public Int32 TienDaNop { get; set; }
+        public Int32 iMonth { get; set; }
+    }
 }
