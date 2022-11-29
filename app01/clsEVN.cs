@@ -68,7 +68,7 @@ namespace app01
         {
              //1.htkvca edit his own remote
             clsPaidCustomer objCustomer_xls ;
-            if (2 == 2)
+            if (1 == 1)
             {
                 objCustomer_xls = new clsPaidCustomer();
                 objCustomer_xls.MaKH = "PD12000025380";
