@@ -17,7 +17,7 @@ namespace app01
         private List<Observer> lst_Observer = new List<Observer>();
         public void notify()
         {
-            string abc = "";
+            //string abc = "";
             //Observer o = new Observer();
 
             foreach (Observer o2 in lst_Observer)
